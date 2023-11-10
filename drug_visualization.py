@@ -74,7 +74,7 @@ def plotpie(drug_use):
     # Plotting the graph
     plt.figure()
     plt.pie(top_five, labels=top_five.index, autopct='%1.1f%%')
-    plt.title('Drug use by age')
+    plt.title('Drug Usage distribution by drug category')
     plt.show()
 
 
@@ -98,7 +98,7 @@ def PlotBarGraph(data):
     plt.bar(age_counts.index, age_counts.values)
     plt.xlabel('Age')
     plt.ylabel('Count')
-    plt.title('Distribution of Ages')
+    plt.title('Drug Deaths over Ages')
 
     plt.tight_layout()
     plt.show()
