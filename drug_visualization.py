@@ -71,13 +71,14 @@ def plotpie(drug_use):
     Returns:
     None
     """
-    # Plotting the graph
+    # Plotting the data
     plt.figure()
     plt.pie(top_five, labels=top_five.index, autopct='%1.1f%%')
     plt.title('Drug Usage distribution by drug category')
     plt.show()
 
 
+# calling the Plotpie with the data
 plotpie(drug_use)
 
 drug_deaths = pd.read_csv(
@@ -104,4 +105,5 @@ def PlotBarGraph(data):
     plt.show()
 
 
+# calling the PlotBaarGraph with the data
 PlotBarGraph(drug_deaths)
